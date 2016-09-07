@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00FDFDF61D8021C400BC216C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FDFDF51D8021C400BC216C /* main.m */; };
+		00FDFDF91D8021C400BC216C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FDFDF81D8021C400BC216C /* AppDelegate.m */; };
+		00FDFDFC1D8021C400BC216C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FDFDFB1D8021C400BC216C /* ViewController.m */; };
+		00FDFDFF1D8021C400BC216C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00FDFDFD1D8021C400BC216C /* Main.storyboard */; };
+		00FDFE011D8021C400BC216C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00FDFE001D8021C400BC216C /* Assets.xcassets */; };
+		00FDFE041D8021C400BC216C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00FDFE021D8021C400BC216C /* LaunchScreen.storyboard */; };
+		00FDFE0F1D8021C400BC216C /* CenterPickMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FDFE0E1D8021C400BC216C /* CenterPickMapTests.m */; };
+		00FDFE1A1D8021C500BC216C /* CenterPickMapUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FDFE191D8021C500BC216C /* CenterPickMapUITests.m */; };
+		00FDFE281D80231E00BC216C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00FDFE271D80231E00BC216C /* MapKit.framework */; };
+		00FDFE311D802D1800BC216C /* TYPlaceSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FDFE2A1D802D1800BC216C /* TYPlaceSearchViewController.m */; };
+		00FDFE321D802D1800BC216C /* TYGooglePlacesApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FDFE2C1D802D1800BC216C /* TYGooglePlacesApiClient.m */; };
+		00FDFE331D802D1800BC216C /* TYGoogleAutoCompleteResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FDFE2E1D802D1800BC216C /* TYGoogleAutoCompleteResult.m */; };
+		00FDFE341D802D1800BC216C /* TYGooglePlace.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FDFE301D802D1800BC216C /* TYGooglePlace.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00FDFE0B1D8021C400BC216C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00FDFDE91D8021C400BC216C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00FDFDF01D8021C400BC216C;
+			remoteInfo = CenterPickMap;
+		};
+		00FDFE161D8021C400BC216C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00FDFDE91D8021C400BC216C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00FDFDF01D8021C400BC216C;
+			remoteInfo = CenterPickMap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00FDFDF11D8021C400BC216C /* CenterPickMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CenterPickMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00FDFDF51D8021C400BC216C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		00FDFDF71D8021C400BC216C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		00FDFDF81D8021C400BC216C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		00FDFDFA1D8021C400BC216C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		00FDFDFB1D8021C400BC216C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		00FDFDFE1D8021C400BC216C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00FDFE001D8021C400BC216C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00FDFE031D8021C400BC216C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00FDFE051D8021C400BC216C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00FDFE0A1D8021C400BC216C /* CenterPickMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CenterPickMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00FDFE0E1D8021C400BC216C /* CenterPickMapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CenterPickMapTests.m; sourceTree = "<group>"; };
+		00FDFE101D8021C400BC216C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00FDFE151D8021C400BC216C /* CenterPickMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CenterPickMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00FDFE191D8021C500BC216C /* CenterPickMapUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CenterPickMapUITests.m; sourceTree = "<group>"; };
+		00FDFE1B1D8021C500BC216C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00FDFE271D80231E00BC216C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		00FDFE291D802D1800BC216C /* TYPlaceSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYPlaceSearchViewController.h; sourceTree = "<group>"; };
+		00FDFE2A1D802D1800BC216C /* TYPlaceSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYPlaceSearchViewController.m; sourceTree = "<group>"; };
+		00FDFE2B1D802D1800BC216C /* TYGooglePlacesApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGooglePlacesApiClient.h; sourceTree = "<group>"; };
+		00FDFE2C1D802D1800BC216C /* TYGooglePlacesApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGooglePlacesApiClient.m; sourceTree = "<group>"; };
+		00FDFE2D1D802D1800BC216C /* TYGoogleAutoCompleteResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGoogleAutoCompleteResult.h; sourceTree = "<group>"; };
+		00FDFE2E1D802D1800BC216C /* TYGoogleAutoCompleteResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGoogleAutoCompleteResult.m; sourceTree = "<group>"; };
+		00FDFE2F1D802D1800BC216C /* TYGooglePlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGooglePlace.h; sourceTree = "<group>"; };
+		00FDFE301D802D1800BC216C /* TYGooglePlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGooglePlace.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00FDFDEE1D8021C400BC216C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00FDFE281D80231E00BC216C /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00FDFE071D8021C400BC216C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00FDFE121D8021C400BC216C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00FDFDE81D8021C400BC216C = {
+			isa = PBXGroup;
+			children = (
+				00FDFE271D80231E00BC216C /* MapKit.framework */,
+				00FDFDF31D8021C400BC216C /* CenterPickMap */,
+				00FDFE0D1D8021C400BC216C /* CenterPickMapTests */,
+				00FDFE181D8021C400BC216C /* CenterPickMapUITests */,
+				00FDFDF21D8021C400BC216C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		00FDFDF21D8021C400BC216C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00FDFDF11D8021C400BC216C /* CenterPickMap.app */,
+				00FDFE0A1D8021C400BC216C /* CenterPickMapTests.xctest */,
+				00FDFE151D8021C400BC216C /* CenterPickMapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00FDFDF31D8021C400BC216C /* CenterPickMap */ = {
+			isa = PBXGroup;
+			children = (
+				00FDFDF71D8021C400BC216C /* AppDelegate.h */,
+				00FDFDF81D8021C400BC216C /* AppDelegate.m */,
+				00FDFDFA1D8021C400BC216C /* ViewController.h */,
+				00FDFDFB1D8021C400BC216C /* ViewController.m */,
+				00FDFDFD1D8021C400BC216C /* Main.storyboard */,
+				00FDFE001D8021C400BC216C /* Assets.xcassets */,
+				00FDFE021D8021C400BC216C /* LaunchScreen.storyboard */,
+				00FDFE051D8021C400BC216C /* Info.plist */,
+				00FDFE351D80319700BC216C /* AutoComplete */,
+				00FDFDF41D8021C400BC216C /* Supporting Files */,
+			);
+			path = CenterPickMap;
+			sourceTree = "<group>";
+		};
+		00FDFDF41D8021C400BC216C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00FDFDF51D8021C400BC216C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		00FDFE0D1D8021C400BC216C /* CenterPickMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				00FDFE0E1D8021C400BC216C /* CenterPickMapTests.m */,
+				00FDFE101D8021C400BC216C /* Info.plist */,
+			);
+			path = CenterPickMapTests;
+			sourceTree = "<group>";
+		};
+		00FDFE181D8021C400BC216C /* CenterPickMapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				00FDFE191D8021C500BC216C /* CenterPickMapUITests.m */,
+				00FDFE1B1D8021C500BC216C /* Info.plist */,
+			);
+			path = CenterPickMapUITests;
+			sourceTree = "<group>";
+		};
+		00FDFE351D80319700BC216C /* AutoComplete */ = {
+			isa = PBXGroup;
+			children = (
+				00FDFE291D802D1800BC216C /* TYPlaceSearchViewController.h */,
+				00FDFE2A1D802D1800BC216C /* TYPlaceSearchViewController.m */,
+				00FDFE2B1D802D1800BC216C /* TYGooglePlacesApiClient.h */,
+				00FDFE2C1D802D1800BC216C /* TYGooglePlacesApiClient.m */,
+				00FDFE2D1D802D1800BC216C /* TYGoogleAutoCompleteResult.h */,
+				00FDFE2E1D802D1800BC216C /* TYGoogleAutoCompleteResult.m */,
+				00FDFE2F1D802D1800BC216C /* TYGooglePlace.h */,
+				00FDFE301D802D1800BC216C /* TYGooglePlace.m */,
+			);
+			name = AutoComplete;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00FDFDF01D8021C400BC216C /* CenterPickMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00FDFE1E1D8021C500BC216C /* Build configuration list for PBXNativeTarget "CenterPickMap" */;
+			buildPhases = (
+				00FDFDED1D8021C400BC216C /* Sources */,
+				00FDFDEE1D8021C400BC216C /* Frameworks */,
+				00FDFDEF1D8021C400BC216C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CenterPickMap;
+			productName = CenterPickMap;
+			productReference = 00FDFDF11D8021C400BC216C /* CenterPickMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		00FDFE091D8021C400BC216C /* CenterPickMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00FDFE211D8021C500BC216C /* Build configuration list for PBXNativeTarget "CenterPickMapTests" */;
+			buildPhases = (
+				00FDFE061D8021C400BC216C /* Sources */,
+				00FDFE071D8021C400BC216C /* Frameworks */,
+				00FDFE081D8021C400BC216C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00FDFE0C1D8021C400BC216C /* PBXTargetDependency */,
+			);
+			name = CenterPickMapTests;
+			productName = CenterPickMapTests;
+			productReference = 00FDFE0A1D8021C400BC216C /* CenterPickMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00FDFE141D8021C400BC216C /* CenterPickMapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00FDFE241D8021C500BC216C /* Build configuration list for PBXNativeTarget "CenterPickMapUITests" */;
+			buildPhases = (
+				00FDFE111D8021C400BC216C /* Sources */,
+				00FDFE121D8021C400BC216C /* Frameworks */,
+				00FDFE131D8021C400BC216C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00FDFE171D8021C400BC216C /* PBXTargetDependency */,
+			);
+			name = CenterPickMapUITests;
+			productName = CenterPickMapUITests;
+			productReference = 00FDFE151D8021C400BC216C /* CenterPickMapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00FDFDE91D8021C400BC216C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = VividInfotech;
+				TargetAttributes = {
+					00FDFDF01D8021C400BC216C = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					00FDFE091D8021C400BC216C = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 00FDFDF01D8021C400BC216C;
+					};
+					00FDFE141D8021C400BC216C = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 00FDFDF01D8021C400BC216C;
+					};
+				};
+			};
+			buildConfigurationList = 00FDFDEC1D8021C400BC216C /* Build configuration list for PBXProject "CenterPickMap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00FDFDE81D8021C400BC216C;
+			productRefGroup = 00FDFDF21D8021C400BC216C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00FDFDF01D8021C400BC216C /* CenterPickMap */,
+				00FDFE091D8021C400BC216C /* CenterPickMapTests */,
+				00FDFE141D8021C400BC216C /* CenterPickMapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00FDFDEF1D8021C400BC216C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00FDFE041D8021C400BC216C /* LaunchScreen.storyboard in Resources */,
+				00FDFE011D8021C400BC216C /* Assets.xcassets in Resources */,
+				00FDFDFF1D8021C400BC216C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00FDFE081D8021C400BC216C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00FDFE131D8021C400BC216C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00FDFDED1D8021C400BC216C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00FDFDFC1D8021C400BC216C /* ViewController.m in Sources */,
+				00FDFE341D802D1800BC216C /* TYGooglePlace.m in Sources */,
+				00FDFDF91D8021C400BC216C /* AppDelegate.m in Sources */,
+				00FDFE331D802D1800BC216C /* TYGoogleAutoCompleteResult.m in Sources */,
+				00FDFDF61D8021C400BC216C /* main.m in Sources */,
+				00FDFE321D802D1800BC216C /* TYGooglePlacesApiClient.m in Sources */,
+				00FDFE311D802D1800BC216C /* TYPlaceSearchViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00FDFE061D8021C400BC216C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00FDFE0F1D8021C400BC216C /* CenterPickMapTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00FDFE111D8021C400BC216C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00FDFE1A1D8021C500BC216C /* CenterPickMapUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00FDFE0C1D8021C400BC216C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00FDFDF01D8021C400BC216C /* CenterPickMap */;
+			targetProxy = 00FDFE0B1D8021C400BC216C /* PBXContainerItemProxy */;
+		};
+		00FDFE171D8021C400BC216C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00FDFDF01D8021C400BC216C /* CenterPickMap */;
+			targetProxy = 00FDFE161D8021C400BC216C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		00FDFDFD1D8021C400BC216C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00FDFDFE1D8021C400BC216C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		00FDFE021D8021C400BC216C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00FDFE031D8021C400BC216C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00FDFE1C1D8021C500BC216C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00FDFE1D1D8021C500BC216C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00FDFE1F1D8021C500BC216C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CenterPickMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VividInfotech.CenterPickMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		00FDFE201D8021C500BC216C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CenterPickMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VividInfotech.CenterPickMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		00FDFE221D8021C500BC216C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CenterPickMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VividInfotech.CenterPickMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CenterPickMap.app/CenterPickMap";
+			};
+			name = Debug;
+		};
+		00FDFE231D8021C500BC216C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CenterPickMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VividInfotech.CenterPickMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CenterPickMap.app/CenterPickMap";
+			};
+			name = Release;
+		};
+		00FDFE251D8021C500BC216C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CenterPickMapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VividInfotech.CenterPickMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CenterPickMap;
+			};
+			name = Debug;
+		};
+		00FDFE261D8021C500BC216C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CenterPickMapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VividInfotech.CenterPickMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CenterPickMap;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00FDFDEC1D8021C400BC216C /* Build configuration list for PBXProject "CenterPickMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00FDFE1C1D8021C500BC216C /* Debug */,
+				00FDFE1D1D8021C500BC216C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00FDFE1E1D8021C500BC216C /* Build configuration list for PBXNativeTarget "CenterPickMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00FDFE1F1D8021C500BC216C /* Debug */,
+				00FDFE201D8021C500BC216C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		00FDFE211D8021C500BC216C /* Build configuration list for PBXNativeTarget "CenterPickMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00FDFE221D8021C500BC216C /* Debug */,
+				00FDFE231D8021C500BC216C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		00FDFE241D8021C500BC216C /* Build configuration list for PBXNativeTarget "CenterPickMapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00FDFE251D8021C500BC216C /* Debug */,
+				00FDFE261D8021C500BC216C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00FDFDE91D8021C400BC216C /* Project object */;
+}

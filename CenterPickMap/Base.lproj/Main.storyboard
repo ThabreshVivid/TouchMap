@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="NQy-QA-yTB">
+                                <rect key="frame" x="0.0" y="57" width="320" height="511"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="wET-ed-aFz"/>
+                                </connections>
+                            </mapView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nis-eX-u35">
+                                <rect key="frame" x="10" y="20" width="301" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="an4-k4-i7B"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="0.38339428191489361" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Nis-eX-u35" secondAttribute="trailing" constant="9" id="ACi-Qn-bZ8"/>
+                            <constraint firstItem="Nis-eX-u35" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="CaW-9p-LyP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NQy-QA-yTB" secondAttribute="bottom" id="F9y-FJ-OdL"/>
+                            <constraint firstAttribute="trailing" secondItem="NQy-QA-yTB" secondAttribute="trailing" id="LmH-b6-nee"/>
+                            <constraint firstItem="Nis-eX-u35" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Lml-Az-H3i"/>
+                            <constraint firstItem="NQy-QA-yTB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZOE-is-WFj"/>
+                            <constraint firstItem="NQy-QA-yTB" firstAttribute="top" secondItem="Nis-eX-u35" secondAttribute="bottom" constant="7" id="o3t-q4-b7u"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="touchMap" destination="NQy-QA-yTB" id="kvt-YL-uRv"/>
+                        <outlet property="txtAddress" destination="Nis-eX-u35" id="4t6-vm-CUK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="322" y="342"/>
+        </scene>
+    </scenes>
+</document>
